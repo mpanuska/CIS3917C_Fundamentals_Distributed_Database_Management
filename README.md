@@ -1,43 +1,23 @@
-# Array Flatten
+---
+services: app-service\web,app-service
+platforms: nodejs
+author: cephalin
+---
 
-[![NPM version][npm-image]][npm-url]
-[![NPM downloads][downloads-image]][downloads-url]
-[![Build status][travis-image]][travis-url]
-[![Test coverage][coveralls-image]][coveralls-url]
+# MEAN.js sample for Azure App Service
 
-> Flatten an array of nested arrays into a single flat array. Accepts an optional depth.
+This is a sample application that you can use to follow along with the tutorial at 
+[Build a Node.js and MongoDB web app in Azure](https://docs.microsoft.com/azure/app-service-web/app-service-web-tutorial-nodejs-mongodb-app). 
 
-## Installation
+This sample application is taken from the official [MEAN.js repository](https://github.com/meanjs/mean) and modified minimally to make it work with Azure App Service. For instructions on how to use MEAN.js, see the official repository. 
 
-```
-npm install array-flatten --save
-```
-
-## Usage
-
-```javascript
-var flatten = require('array-flatten')
-
-flatten([1, [2, [3, [4, [5], 6], 7], 8], 9])
-//=> [1, 2, 3, 4, 5, 6, 7, 8, 9]
-
-flatten([1, [2, [3, [4, [5], 6], 7], 8], 9], 2)
-//=> [1, 2, 3, [4, [5], 6], 7, 8, 9]
-
-(function () {
-  flatten(arguments) //=> [1, 2, 3]
-})(1, [2, 3])
-```
+To learn how to build this sample step by step, see [Running Mean.js App on Azure App Services with Continuous Integration and Delivery](https://prmadi.com/running-mean-js-app-on-azure-app-services/).
 
 ## License
 
-MIT
+See [LICENSE](LICENSE).
 
-[npm-image]: https://img.shields.io/npm/v/array-flatten.svg?style=flat
-[npm-url]: https://npmjs.org/package/array-flatten
-[downloads-image]: https://img.shields.io/npm/dm/array-flatten.svg?style=flat
-[downloads-url]: https://npmjs.org/package/array-flatten
-[travis-image]: https://img.shields.io/travis/blakeembrey/array-flatten.svg?style=flat
-[travis-url]: https://travis-ci.org/blakeembrey/array-flatten
-[coveralls-image]: https://img.shields.io/coveralls/blakeembrey/array-flatten.svg?style=flat
-[coveralls-url]: https://coveralls.io/r/blakeembrey/array-flatten?branch=master
+## Contributing
+
+This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+  
